@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {    
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+
+    
+}
+
+:root {
+    --primary-color: #231B1B;
+    --secondary-color: #14FFF7;
+    --accent1-color: #E2D4B7;
+    --accent2-color: #8D94BA;
+
+    --heading-font: 'Archivo Black', sans-serif;
+    --paragraph-font: 'DM Sans', sans-serif;
+
+    --nav-background-color: #E2D4B7;
+    --nav-link-color: #8D94BA;
+    --nav-hover-link-color: #231B1B;
+    --nav-hover-background-color:#14FFF7;
+
+}
+
+
+body {
+    font-family: var(--paragraph-font); /* Set font-family to the value of --paragraph-font variable */
+    max-width: 960px; /* Limit the width of the document output to 960 pixels */
+    padding: 20px; /* Set padding around the document to 20 pixels */
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
