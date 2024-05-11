@@ -1,16 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: #8EF9F3; /*I replaced the steelblue, this is for home, rafting website, etc*/
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: rgb(14, 13, 13); /*this is for the color letters in home...*/
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: steelblue;
+    color: #2C302E;
 }
 
 img{
@@ -31,12 +37,19 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); 
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    /*margin: 1rem;*/
+    /*border: 1px solid rgba(0, 0, 0, 0.2); */
+    /*padding: 1rem;*/
+    /*background-color: #eee;*/
+   /* color: #333;*/
     text-align: center;
+}
+
+aside h2{
+    position: relative;
+    top: 35px;
+    left: 10px;
+    color: rgb(10, 10, 10);
 }
 
 aside img {
@@ -47,6 +60,7 @@ aside img {
 main img{
     width: 150px;
     height: auto;
+    float: right;
 }
 
 p{padding: 0;}
@@ -55,4 +69,14 @@ footer{
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Clas selectors*/
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color:#8EF9F3;
+    color: rgb(5, 5, 5);
 }
