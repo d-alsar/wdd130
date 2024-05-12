@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    --primary-color: #231B1B;
+    --secondary-color: #14FFF7;
+    --accent1-color: #E2D4B7;
+    --accent2-color: #8D94BA;
+
+    --heading-font: 'Archivo Black', sans-serif;
+    --paragraph-font: 'DM Sans', sans-serif;
+
+}
+
+
+/* Remove underlines from social media links */
+.sociallinks {
+    text-decoration: none;
+  }
+
+ 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+
+h1 {
+    position: relative;
+    text-shadow: 3px 3px 5px #777;
+    text-align: center;
+    box-shadow: 0 0 10px #111;
+    background: radial-gradient(#eee, #78E0DC);
+    left: 150px;
+
+}
+
+
+article {
+	position: relative;
+	top: 5px;
+	left: 150px;
+	background: radial-gradient(#eee, #78E0DC);
+	border: 1px solid #000;
+	padding: 0.65rem;
+	box-shadow: 0 0 30px #111;
+	opacity: 0.9;
+    
+}
+
+
+article img {
+    float: right;
+    margin-right: 10px;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	text-shadow: 3px 3px 5px #777;
+}
+
+
+main {    
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+
+section h2 {
+    margin-top: 160px; 
+  }
+
+.second-section h2{
+    margin-top: 20px; 
+}
+
