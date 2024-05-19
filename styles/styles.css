@@ -5,18 +5,29 @@
 }
 
 nav {
-    background-color: #8EF9F3; /*I replaced the steelblue, this is for home, rafting website, etc*/
-    padding: 10px;
+    background-color: #30343F; /*  8EF9F3-- I replaced the steelblue, this is for home, rafting website, etc*/
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 nav a {
-    color: rgb(14, 13, 13); /*this is for the color letters in home...*/
+    color: rgb(14, 13, 13); /* this is for the color letters in home...*/
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
     color: #2C302E;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 img{
@@ -33,6 +44,8 @@ p{
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
@@ -43,13 +56,18 @@ aside {
     /*background-color: #eee;*/
    /* color: #333;*/
     text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2{
-    position: relative;
+    position: absolute;
     top: 35px;
-    left: 10px;
+    left: 100px;
     color: rgb(10, 10, 10);
+    text-shadow: 3px 3px 5px #f8f8f8;
+
 }
 
 aside img {
@@ -77,6 +95,17 @@ footer{
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
-    background-color:#8EF9F3;
+    background-color:#CFE8EF; /* 8EF9F3 */
     color: rgb(5, 5, 5);
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+
+.grid {
+    display: grid;
+    align-items: center;
 }
