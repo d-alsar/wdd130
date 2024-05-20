@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+* {
+    padding: 2px; /* Adjust the value as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
 
 :root {
     --primary-color: #231B1B;
@@ -13,16 +17,25 @@
 
 }
 
+header {
+    display: grid;
+    align-items: start;
+
+}
+
 
 /* Remove underlines from social media links */
 .sociallinks {
     text-decoration: none;
+    display: flex;
+    justify-content: right;
+
   }
 
  
 .hero img {
     display: block;
-    width: 100%;
+    width: 95%;
     height: auto;
     object-fit: cover;
     position: absolute;
@@ -67,12 +80,12 @@ h2 {
 }
 
 
-main {    
+ main {    
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 840px;
     padding: 20px;
 
-}
+} 
 
 
 h1,h2,h3,h4,h5,h6 {
@@ -80,6 +93,17 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--primary-color)
 }
 
+.history {
+    display: grid; /* Use CSS Grid */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text within elements */
+    padding: 20px; /* Add some padding for better spacing */
+    grid-template-rows: auto auto; /* Ensure rows are sized based on their content */
+    row-gap: 20px; /* Space between rows */
+    max-width: none;
+    margin-left: 200px;
+}
 
 section h2 {
     margin-top: 160px; 
@@ -87,5 +111,64 @@ section h2 {
 
 .second-section h2{
     margin-top: 20px; 
+    margin-left: 200px;
 }
+
+.second-section {
+    text-align: center; /* Center align the content */
+}
+
+
+/*Use CSS Grid in the header to create the horizontal layout between the logo and the navigation bar.*/
+
+.navbar {
+    display: flex; /* Use flexbox to layout the items horizontally */
+    align-items: center; /* Center align items vertically */
+    background-color: #333; /* Background color of the navbar */
+    padding: 10px 20px; /* Padding around the navbar */
+
+}
+    
+
+.navbar img {
+    display: block; /* Ensure the image behaves like a block-level element */
+    margin-right: 20px; 
+}
+
+
+.navbar a {
+    padding: 10px 20px; /* Add padding to create button-like appearance */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center; /* Center align text within the button */
+    margin-right: 1px; /* Space between links */
+    border-bottom: 1px solid #0a0a0a;
+    flex: 1 1 100%;
+
+}
+
+
+.navbar a:hover {
+    background-color: #0056b3; /* Change background color on hover */
+
+}
+
+
+
+
+.image-container {
+    display: flex;
+    grid-template-columns: 100px 100px 100px 100px 100px; /* Five equal-width columns */
+    gap: 10px; /* Adjust the gap between images */
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.image-container img {
+    max-width: 30%; /* Ensure images don't exceed container width */
+}  
 
