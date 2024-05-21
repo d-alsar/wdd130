@@ -83,7 +83,7 @@ h2 {
 
 
  main {    
-    font-family: var(--paragraph-font);
+    font-family: var(--paragraph-font); 
     max-width: 840px;
     padding: 20px;
 } 
@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 section h2 {
-    margin-top: 160px; 
+    margin-top: 100px; 
   }
 
 
@@ -188,7 +188,7 @@ figure {
 
 figcaption {
     position: absolute;
-    bottom: 10;
+    bottom: -25px;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
