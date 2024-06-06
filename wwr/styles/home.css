@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 2px; /* Adjust the value as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+
+:root {
+    --primary-color: #0F1020;
+    --secondary-color: #14FFF7;
+    --accent1-color: #E2D4B7;
+    --accent2-color: #8D94BA;
+
+    --heading-font: 'Archivo Black', sans-serif;
+    --paragraph-font: 'DM Sans', sans-serif;
+}
+
+
+header {
+    padding: 20px;
+} 
+
+.header h1 {
+    position: absolute;
+}
+
+
+
+/* Remove underlines from social media links */
+.sociallinks {
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+  }
+
+
+
+
+/*Use CSS Grid in the header to create the horizontal layout between the logo and the navigation bar.*/
+
+.navbar,.sociallinks {
+    display: flex; /* Use flexbox to layout the items horizontally */
+    align-items: center; /* Center align items vertically */
+    background-color: #78E0DC  ; /* Background color of the navbar */
+    padding: 5px 10px; /* Padding around the navbar */
+
+}
+    
+
+.navbar img {
+    display: block; /* Ensure the image behaves like a block-level element */
+    margin-right: 20px; 
+}
+
+
+.navbar a {
+    padding: 10px 20px; /* Add padding to create button-like appearance */
+    background-color: #343F3E; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center; /* Center align text within the button */
+    margin-right: 1px; /* Space between links */
+    border-bottom: 1px solid #0a0a0a;
+    flex: 1 1 100%;
+
+}
+
+
+.navbar a:hover {
+    background-color: #F5D547; /* Change background color on hover */
+    color: #343F3E
+
+}
+
+
+footer p {
+    position: absolute;
+}
+
+footer {
+
+    padding: 20px;
+}
+
+/* ---------------about us-------------------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+  
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  /* ---------------main---------------- */
+
+* {
+    box-sizing: border-box;
+}
+  
+  /* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+.side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+}
+  
+  /* Main column */
+.main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+}
+
+/* ---------form------------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #343F3E;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #F5D547;
+  color: #343F3E
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #7c7a7a;
+  padding: 10px;
+  margin: 15px;
+}
+
+/* Create two columns that float next to eachother */
+.column{
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.header h1, .header p{
+    position: absolute;
+	top: 5px;
+	left: 150px;
+	background: radial-gradient(#eee, #78E0DC);
+	border: 1px solid #000;
+	padding: 0.65rem;
+	box-shadow: 0 0 30px #111;
+	opacity: 0.9;
+    margin-top: 25rem;
+    margin-left: 25rem;
+
+}
+
+.header h1 {
+    margin-top: 20rem;
+}
+
+.header p {
+
+    margin-left: 20rem;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.5rem;
+	text-shadow: 3px 3px 5px #777;
+}
